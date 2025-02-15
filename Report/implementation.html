@@ -1,0 +1,180 @@
+<head>
+    <title>Computer Science Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+    <header>
+        <h1 class="Title">Sleep Tracker</h1>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="investigation.html">Investigation</a>
+            <a href="design.html">Design</a>
+            <a href="implementation.html">Create</a>
+            <a href="evaluation.html">Evaluation</a>
+            <a href="references.html">References</a>
+        </div>
+    </header>
+
+    <div id="TitleHeader">
+        <h1 style="display: inline-block;">Create</h1>
+    </div>
+
+    <div id="MainText">
+        <p>
+            <h3>Timeline</h3>
+            <img src="img/timeline.png" alt="Timeline"/>
+            
+            <h3>Progress Log</h3>
+            <h4>Week 1:</h4>
+            <ul>
+                <li>Brainstormed ideas for the project</li>
+                <li>Created a project timeline</li>
+                <li>Began work on the Investigation</li>
+            </ul>
+            <h4>Week 2:</h4>
+            <ul>
+                <li>Decided on a project idea</li>
+                <li>Finished the Investigation</li>
+                <li>Began on the design section</li>
+            </ul>
+            <h4>Week 3:</h4>
+            <ul>
+                <li>Created the flowchart</li>
+                <li>Began to plan the design of the different sections of the artefact.</li>
+                <li>Created a mock up of a menu in the python program</li>
+                <li>Chose some useful data science libraries to use in the python program</li>
+            </ul>
+
+            <h4>Week 4&5:</h4>
+            <ul>
+                <li>These weeks were Christmas break so no work could be done on the coursework.</li>
+            </ul>
+            <h4>Week 6:</h4>
+            <ul>
+                <li>Began work on the prorgramming of the artefact</li>
+                <li>Outlined the basic micro-bit code</li>
+                <li>Began on the python program</li>
+                <li>Implemented graph of sleep time in relation to screen time in the python program using matplotlib</li>
+                <li>Implemented graph of sleep time in related physical activity</li>
+            </ul>
+
+            <h4>Week 7:</h4>
+            <ul>
+                <li>Implemented the "what if questions" into the python program using sci-kit learn</li>
+                <li>As I was ahead of schedule I began on a Graphical User Interface for the python program using customtkinter</li>
+                <li>Added graph of sleep over time</li>
+                <li></li>
+            </ul>
+
+            <h4>Week 8:</h4>
+            <ul>
+                <li>Implemented button to import csv file into the program in the GUI</li>
+                <li>Implemented screen in the GUI which would warn the user if no data has been imported yet</li>
+            </ul>
+
+            <h4>Week 9-11:</h4>
+            <ul>
+                <li>During weeks 9 and 10 we sat our mock examinations so no work was carried out</li>
+                <li>Week 11 was during our midterm break so no work on the project was carried out</li>
+            </ul>
+
+            <h4>Week 12:</h4>
+            <ul>
+                <li>Final touches on the artefact</li>
+                <li>Began on unit testing</li>
+                <li>Began on the evaluate section</li>
+            </ul>
+
+            <h4>Week 13:</h4>
+            <ul>
+                <li>Finished the code for the artefact</li>
+                <li>Finished unit testing</li>
+                <li>Completed Evaluation</li>
+                <li>Began on Meeting the Brief section</li>
+            </ul>
+
+            <h4>Week 14:</h4>
+            <ul>
+                <li>Recorded video</li>
+                <li>Finalized project</li>
+            </ul>
+
+            <h3>Development of the Artefact</h3>
+            
+            <p>This artefact was created using 
+                the BBC Microbit to take in and record data and 
+                then python was used to process the data and make predictions based on it.
+            </p>
+            
+            <ul>
+                <h4><b>Microbit</b></h4>
+                <li>
+                    I first started by creating a Microbit program which would 
+                    log data and output it to a csv file on a PC. 
+                    I did this by using the Data Logger extension on the BBC Microbit.
+                </li>
+                <li>I used this extension to log three pieces of data: 
+                    the amount of physical activity during a day, 
+                    the amount of screen time during the day and the time slept that day.
+                </li>
+                <img src="img/create18.PNG" alt="">
+                <li>The program would log when the user went to sleep and when they woke up and through that find the time slept that night.</li>
+                <li>The program would also warn the user of excessive screen time and of not enough physical activity as well as congratulating them on moderate screen time and greater physical activity.</li>
+                <h4><b>Analyis Program</b></h4>
+                <li>Then I began on the python program to read in and analyze this data.</li>
+                <li>I used the csv library to read in the data.</li>
+                    <img src="img/create1.PNG" alt="">
+                <li>I began to create the different functions to analyze and make predictions on the data.</li>
+                <li>I used matplotlib and numpy to output useful graphs of the data.</li>
+                    <img src="img/create2.PNG" alt="">
+                    <img src="img/create3.PNG" alt="">
+                <li><b>Example:</b></li>
+                    <img src="img/create4.PNG" alt="">
+                    <img src="img/create5.PNG" alt="">
+                    <img src="img/create6.PNG" alt="">
+
+                <li>I used sci-kit learn to make predictions based on the data.</li>
+                <li>The function would take in the value of one of the pieces of data and make a prediction of the value of another piece of data based on it.
+                </li>
+                <li>Example:</li>
+                <img src="img/create8.PNG" alt="">
+                <li>This function takes in a value of screen time and time spent physically active in a day and then attempts to predict the time slept that night. </li>
+                <br>
+                <li>I then created a basic menu system in the console:</li>
+                <img src="img/create9.PNG" alt="">
+
+                <h4><b>Graphical User Interface</b></h4>
+                <li>At this point in the development of the artefact I was behind schedule and so had time to spare, therefore I decided to try and implement a Graphical User Interface.</li>
+                <li>To do this I used a third party python library called customtkinter.</li>
+                <img src="img/create10.PNG" alt="">
+                <li>After setting the colour scheme and creating the basic frame I created a dropdown menu which allowed the user to select different graphs of the data.</li>
+                <img src="img/create19.PNG" alt="">
+                <img src="img/create11.PNG" alt="">
+                <img src="img/create12.PNG" alt="">
+                <br><br>
+                <li>I then implemented the predictive element into the GUI:</li>
+                <img src="img/create13.PNG" alt="">
+                <img src="img/create14.PNG" alt="">
+                <img src="img/create15.PNG" alt="">
+                <li>The user can select which value they want to predict and then enter the corresponding values to predict based on, the interface then outputs the predicted result below.</li>
+                <br><br>
+
+                <li>I also implemented a button which would open a file dialog, allowing the user to open a csv file with the data they wish to read in.</li>
+                <img src="img/create16.PNG" alt="">
+                <li>This file dialog was implemented using customtkinter.</li>
+                <img src="img/create20.PNG" alt="">
+                <br><br>
+                <li>Finally, I then implemented a screen which would appear in the GUI if no data had been read in and prompt the user to select the data to read in.</li>
+                <img src="img/create17.PNG" alt="">
+            </ul>
+
+
+            <h3>Testing</h3>
+            <img src="img/testTable.PNG" alt="">
+
+
+    </div>
+    <br><br><br><br>
+    
+</body>

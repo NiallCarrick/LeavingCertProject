@@ -1,0 +1,72 @@
+<table>
+                <tr>
+                    <th>Test Number</th>
+                    <th>Action</th>
+                    <th>Expected Output</th>
+                    <th>Actual Output</th>
+                    <th>Test Result</th>
+                    <th>Test Comments</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Record data - MV2</td>
+                    <td>I expected that the Microbit would successfully log the required data of screen time,time spent physically active and time slept.</td>
+                    <td>The Microbit recorded the desired data to its csv file which then allowed for its analysis.</td>
+                    <td>Pass</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Show Graphs of data</td>
+                    <td>I expected that the program would output a graph of a scatter plot with a line of best in a seperate window.</td>
+                    <td>The graphs were outputted, however the different graphs were overlayed over one another after selecting a different graph without first closing the graph window.</td>
+                    <td>Fails</td>
+                    <td>I will attempt to have the graph window be cleared each time a new graph is selected.</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Show Graphs of data</td>
+                    <td>I expected that the program would output a graph of a scatter plot with a line of best in a seperate window and that the graphs would no longer be overlayed on top of each other.</td>
+                    <td>A scatter plot with a line of best fit was outputted in a seperate window, the screen was cleared before a new graph was outputted each time.</td>
+                    <td>Pass</td>
+                    <td>I used plt.clf() to clear the window before outputting another graph.</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Output Prediction - Sleep</td>
+                    <td>I expected that when I entered an amount of screen time and physically active time the program would output the predicted time slept on the screen.</td>
+                    <td>A text output of the predicted time slept was outputted on the Graphical User Interface.</td>
+                    <td>Pass</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Output Prediction - Physical</td>
+                    <td>I expected that when I entered an amount of time slept in hours, the program would output the predicted amount of physical activity that would be expected with that amount of time slept.</td>
+                    <td>A text output of the predicted time spent physically active was outputted on the Graphical User Interface.</td>
+                    <td>Pass</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Output Prediction - Screen</td>
+                    <td>I expected that when I entered an amount of time slept in hours, the program would output the predicted amount of screen time that day, that would be expected with that amount of time slept.</td>
+                    <td>A text output of the predicted time spent on screens was outputted on the Graphical User Interface.</td>
+                    <td>Pass</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>Read in CSV file</td>
+                    <td>I expected that when I pressed the "Open CSV" button that a file dialog would open which would allow me to select a csv file to scan in to the program.</td>
+                    <td>The button opened a file dialog which let me select a csv file, the file was then scanned in and the data was used to output graphs and make predictions.</td>
+                    <td>Pass</td>
+                    <td></td>
+                </tr>
